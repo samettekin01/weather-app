@@ -32,11 +32,11 @@ function WeatherCard({ data, city }) {
                         </div>
                         <div className='text-center text-white text-lg'>Clear</div>
                         <div className='city-weather-temp text-center text-white text-lg'>
-                            <div className='p-5'>Temp: {d.main.temp}°</div>
+                            <div className='p-5 text-3xl'>{Math.floor(d.main.temp)}°</div>
                             <div className='flex flex-row justify-center'>
-                                <span className='text-sm'>Max:<br /> {d.main.temp_max}<small>°</small></span>
+                                <span className='text-sm'>Max:<br /> {Math.floor(d.main.temp_max)}<small>°</small></span>
                                 <div className='border-solid border-orange-500 rounded-sm border-2 opacity-40 mr-5 ml-5'></div>
-                                <span className='text-sm'> Min:<br />{d.main.temp_min}°</span>
+                                <span className='text-sm'> Min:<br />{Math.floor(d.main.temp_min)}°</span>
                             </div>
                         </div>
                     </div>
