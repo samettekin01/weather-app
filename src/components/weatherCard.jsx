@@ -13,7 +13,7 @@ function WeatherCard({ data, city }) {
         <div className="weathercard">
             {
                 data && data.list.map((d, i) => (
-                    <div key={i} className={`city-weather-container `} >
+                    <div key={i} className="city-weather-container" >
                         <div className='city-name text-center text-white text-2xl'>{city},{data.city.country}</div>
                         <div className='date text-center text-white'>{`${setDate(d.dt_txt).history}`}</div>
                         <div className='date text-center text-white'>{`${setDate(d.dt_txt).hours}`}</div>
@@ -41,7 +41,7 @@ function WeatherCard({ data, city }) {
                         </div>
                     </div>
 
-                ))};
+                ))}
         </div>
     )
 }

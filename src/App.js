@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <div className='relative w-64 bg-white rounded-xl mt-5'>
+        <div className='relative w-64 bg-white rounded-xl mt-5 sticky top-5 ' style={{zIndex: "1"}}>
           <Listbox value={list} onChange={setList}>
             <Listbox.Button className="listbox-button relative">{list.city}<BsFillCaretDownFill className='absolute right-2 top-3 opacity-90 text-sky-950' /></Listbox.Button>
             <Listbox.Options className="listbox-options">
@@ -41,7 +41,7 @@ function App() {
         <WeatherCard data={cityWeather} city={city} />
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
