@@ -3,6 +3,7 @@ import axios from 'axios';
 import cities from "./data/cities.json"
 import { Listbox } from '@headlessui/react';
 import WeatherCard from './components/weatherCard';
+import { BsFillCaretDownFill } from 'react-icons/bs'
 import './App.css';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <div className='container'>
         <div className='relative w-64 bg-white rounded-xl mt-5'>
           <Listbox value={list} onChange={setList}>
-            <Listbox.Button className="listbox-button">{list.city}</Listbox.Button>
+            <Listbox.Button className="listbox-button relative">{list.city}<BsFillCaretDownFill className='absolute right-2 top-3 opacity-90 text-sky-950' /></Listbox.Button>
             <Listbox.Options className="listbox-options">
               {cities && cities.map((data, i) =>
                 <Listbox.Option

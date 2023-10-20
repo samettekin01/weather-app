@@ -25,9 +25,9 @@ body,
 }
 
 .listbox-button {
-  @apply w-full bg-white p-2 rounded-lg shadow-md 
+  @apply w-full bg-white p-2 rounded-lg shadow-md outline-sky-600 focus:ring-2 focus:ring-offset-2  ring-offset-sky-600
 }
 
 .listbox-options {
-  @apply absolute top-11 w-full overflow-auto max-h-80 bg-white opacity-70 text-center p-2 text-lg font-bold rounded-lg
+  @apply absolute top-11 w-full overflow-auto max-h-80 bg-white opacity-70 text-center p-2 text-lg font-bold rounded-lg 
 }
