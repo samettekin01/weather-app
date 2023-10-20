@@ -1,0 +1,15 @@
+.weathercard {
+    @apply flex flex-row flex-wrap justify-center
+}
+
+.city-weather-container {
+    @apply bg-sky-950 bg-opacity-40 rounded-md m-1 mt-5 p-10 shadow-2xl;
+    min-width: 230px;
+    max-width: 230px;
+    transition: transform .5s;
+}
+
+.city-weather-container:hover {
+    @apply bg-sky-900 bg-opacity-40;
+    transform: scale(1.1);
+}
