@@ -4,7 +4,7 @@ function WeatherCard({ data, city }) {
 
     const setDate = (date) => {
         const d = new Date(date);
-        const history = `${d.getDay()}.${d.getMonth() + 1}.${d.getFullYear()}`
+        const history = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`
         const hours = `${d.getHours()}:${d.getMinutes()}0`
         return { history, hours }
     }
